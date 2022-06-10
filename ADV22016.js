@@ -9,5 +9,17 @@ document.getElementById('inputfile').addEventListener('change', function () {
 })
 
 function solution(text) {
+    splittext = text.split("\n");
+    newtext = splittext.filter(element => {
+        return element !== "";
+    });
+    arraytext = []
+    for (i=0;i<newtext.length;i++){
+        arraytext.push(newtext[i].split(""));
+    }
+
+    let keypad = [[1,2,3],[4,5,6],[7,8,9]];
+
     
+
 }
